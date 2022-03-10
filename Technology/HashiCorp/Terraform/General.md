@@ -2,14 +2,16 @@
 
 ## General Command
 
-[Command: init](https://www.terraform.io/cli/commands/init)
+### Command: init
+* [Documentation](https://www.terraform.io/cli/commands/init)
 
 ```bash
 # Initialize a working directory
 terraform -chdir="<directory/>" init
 ```
 
-[Command: refresh](https://www.terraform.io/cli/commands/refresh)
+### Command: refresh
+* [Documentation](https://www.terraform.io/cli/commands/refresh)
 
 ```bash
 # Read the current setting and update
@@ -17,14 +19,16 @@ terraform -chdir="<directory/>" init
 terraform -chdir="<directory/>" refresh -var-file="<directory/filename.tfvars>" [--auto-approve]
 ```
 
-[Command: plan](https://www.terraform.io/cli/commands/plan)
+### Command: plan
+* [Documentation](https://www.terraform.io/cli/commands/plan)
 
 ```bash
 # Create an execution plan
 terraform -chdir="<directory/>" plan -var-file="<directory/filename.tfvars>"
 ```
 
-[Command: apply](https://www.terraform.io/cli/commands/apply)
+### Command: apply
+* [Documentation](https://www.terraform.io/cli/commands/apply)
 
 ```bash
 # Execute the action proposed
@@ -32,7 +36,8 @@ terraform -chdir="<directory/>" plan -var-file="<directory/filename.tfvars>"
 terraform -chdir="<directory/>" apply -var-file="<directory/filename.tfvars>" [-auto-approve]
 ```
 
-[Command: destroy](https://www.terraform.io/cli/commands/destroy)
+### Command: destroy
+* [Documentation](https://www.terraform.io/cli/commands/destroy)
 
 ```bash
 # Destroy all remote object
