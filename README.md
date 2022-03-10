@@ -1,2 +1,3 @@
 # Knowledge
-Knowledge
+
+A repository of Knowledge.
