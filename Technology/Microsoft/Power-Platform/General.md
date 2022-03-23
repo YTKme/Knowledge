@@ -1,4 +1,4 @@
-# Terraform
+# Power Platform
 
 ## Reference
 
