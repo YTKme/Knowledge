@@ -7,9 +7,6 @@ features. It provides access control and several collaboration features
 such as bug tracking, feature requests, task management, continuous
 integration, and wikis for every project.
 
-## Content
-* [GitHub Check](GitHub-Check.md)
-
 ## Reference
 
 ### General
