@@ -44,3 +44,13 @@ terraform -chdir="<directory/>" apply -var-file="<directory/filename.tfvars>" [-
 # The `-auto-approve` is optional
 terraform -chdir="<directory/>" destroy -var-file="<directory/filename.tfvars>" [--auto-approve]
 ```
+
+### Command: fmt
+* [Documentation](https://www.terraform.io/cli/commands/fmt)
+
+```bash
+# Rewrite Terraform configuration files to a canonical format and style
+terraform -chdir="<directory/>" fmt
+# Alternatively...
+terraform fmt "<directory/>"
+```
