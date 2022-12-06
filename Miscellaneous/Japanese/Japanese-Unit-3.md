@@ -3,13 +3,13 @@
 ## Clothes 2
 
 | Japanese     | Hiragana | Katakana | Phonetic    | Definition |
-| ------------ | -------- | -------- | ----------- | ---------- |
+|--------------|----------|----------|-------------|------------|
 | ドレス       |          |          | doresu      | dress      |
-| 緑色         |          |          | ｍ idoriiro | green      |
+| 緑色         |          |          | ｍidoriiro  | green      |
 | 紫色         |          |          | murasakiiro | purple     |
 | ハンドバッグ |          |          | handobaggu  | purse      |
 | 紫           | むらさき |          | murasaki    | purple     |
-| 緑           | みどり   |          | ｍ idori    | green      |
+| 緑           | みどり   |          | ｍidori     | green      |
 | 蹴り         | けり     |          | keri        | kick       |
 | 野球         | やきゅう |          | yakyū       | baseball   |
 | 思い         | おもい   |          | omoi        | heavy      |
