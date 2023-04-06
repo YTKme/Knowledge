@@ -34,6 +34,15 @@ sudo apt-get install build-essential gdb lcov pkg-config \
 ```
 
 ```python
+wget https://www.python.org/ftp/python/3.11.3/Python-3.11.3.tgz
+```
+
+```python
+tar xvf Python-3.11.3.tgz
+cd Python-3.11.3
+```
+
+```python
 ./configure \
     --prefix=/opt/python/3.11/ \
     --enable-shared \
