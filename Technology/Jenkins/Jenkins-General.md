@@ -12,6 +12,10 @@ facilitating continuous integration and continuous delivery.
 * [How do I add an element to a list in Groovy?](https://stackoverflow.com/questions/25962591/how-do-i-add-an-element-to-a-list-in-groovy)
 * [How to check if string exists in array in a Jenkins Declarative pipeline step](https://stackoverflow.com/questions/70898606/how-to-check-if-string-exists-in-array-in-a-jenkins-declarative-pipeline-step)
 
+### Scope
+* [Strange variable scoping behavior in Jenkinsfile](https://stackoverflow.com/questions/50571316/strange-variable-scoping-behavior-in-jenkinsfile)
+* [Groovy scope - how to access script variable in a method](https://stackoverflow.com/questions/15619216/groovy-scope-how-to-access-script-variable-in-a-method)
+
 ### Miscellaneous
 * [Remote Access API](https://www.jenkins.io/doc/book/using/remote-access-api/)
 * [Matrix Building in Scripted Pipeline](https://www.jenkins.io/blog/2019/12/02/matrix-building-with-scripted-pipeline/)
