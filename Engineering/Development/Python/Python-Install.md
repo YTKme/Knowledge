@@ -44,22 +44,22 @@ cd Python-3.11.3
 
 ```python
 ./configure \
-    --prefix=/opt/python/3.11/ \
+    --prefix=/opt/python/3.11.3/ \
     --enable-shared \
     --enable-optimizations \
     --with-lto=full \
     --with-ensurepip=install \
-    LDFLAGS=-Wl,-rpath=/opt/python/3.11/lib/
+    LDFLAGS=-Wl,-rpath=/opt/python/3.11.3/lib/
 
 # ./configure \
-#     --prefix=/opt/python/3.11/ \
+#     --prefix=/opt/python/3.11.3/ \
 #     --enable-shared \
 #     --enable-optimizations \
 #     --with-lto=full \
 #     --enable-pystats \
 #     --enable-profiling \
 #     --with-ensurepip=install \
-#     LDFLAGS=-Wl,-rpath=/opt/python/3.11/lib/
+#     LDFLAGS=-Wl,-rpath=/opt/python/3.11.3/lib/
 ```
 
 ```python
