@@ -1,39 +1,45 @@
 # Python Install
 
-```python
+## Prerequisite
+
+```bash
 # Install cURL
 sudo apt install curl
 ```
 
-```python
+```bash
 # Install Wget
 sudo apt install wget
 ```
 
-```python
+```bash
 # Install OpenSSL
 sudo apt install openssl
 ```
 
-```python
+```bash
 # Install Clang
 sudo apt install clang
 ```
 
-```python
+```bash
 # Instal LLVM
 sudo apt install llvm
 ```
 * For `--with-lto` flag, mainly used for Clang and ARM?
 
-```python
+```bash
 sudo apt-get install build-essential gdb lcov pkg-config \
     libbz2-dev libffi-dev libgdbm-dev libgdbm-compat-dev liblzma-dev \
     libncurses5-dev libreadline6-dev libsqlite3-dev libssl-dev \
     lzma lzma-dev tk-dev uuid-dev zlib1g-dev
 ```
 
-```python
+## Configure
+
+### Linux
+
+```bash
 ./configure \
     --prefix=/opt/python/3.11/ \
     --enable-shared \
@@ -53,13 +59,60 @@ sudo apt-get install build-essential gdb lcov pkg-config \
 #     LDFLAGS=-Wl,-rpath=/opt/python/3.11/lib/
 ```
 
-```python
+### macOS ARM64
+
+```bash
+CFLAGS="-I$(brew --prefix gdbm)/include -I$(brew --prefix xz)/include" \
+LDFLAGS="-L$(brew --prefix gdbm)/lib -I$(brew --prefix xz)/lib" \
+PKG_CONFIG_PATH="$(brew --prefix tcl-tk)/lib/pkgconfig" \
+./configure \
+    --prefix=/opt/python/3.11.3/ \
+    --enable-shared \
+    --enable-optimizations \
+    --with-ensurepip=install \
+    --with-pydebug \
+    --with-openssl="$(brew --prefix openssl@1.1)"
+
+# Universal (Work in Progress)
+# CFLAGS="-I$(brew --prefix gdbm)/include -I$(brew --prefix xz)/include" \
+# LDFLAGS="-L$(brew --prefix gdbm)/lib -I$(brew --prefix xz)/lib" \
+# PKG_CONFIG_PATH="$(brew --prefix tcl-tk)/lib/pkgconfig" \
+# ./configure \
+#     --prefix=/opt/python/3.11.3/ \
+#     --enable-shared \
+#     --enable-optimizations \
+#     --with-ensurepip=install \
+#     --with-pydebug \
+#     --enable-universalsdk --with-universal-archs=universal2 \
+#     --with-openssl="$(brew --prefix openssl@1.1)"
+#     --with-openssl-rpath=auto
+```
+
+## Build
+
+### Linux
+
+```bash
 make -j "$(nproc)"
 #sudo make -j "$(nproc)"
 ```
 
-```python
+```bash
+#
+sudo make install
+
+#
 sudo make altinstall
+```
+
+### macOS ARM64
+
+```bash
+arch -arm64 make -j"$(sysctl -n hw.logicalcpu)"
+```
+
+```bash
+arch -arm64 make install
 ```
 
 ## Reference
