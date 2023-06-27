@@ -70,7 +70,6 @@ PKG_CONFIG_PATH="$(brew --prefix tcl-tk)/lib/pkgconfig" \
     --enable-shared \
     --enable-optimizations \
     --with-ensurepip=install \
-    --with-pydebug \
     --with-openssl="$(brew --prefix openssl@1.1)"
 
 # Universal (Work in Progress)
