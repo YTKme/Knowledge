@@ -61,6 +61,20 @@ sudo apt-get install build-essential gdb lcov pkg-config \
 
 ### macOS ARM64
 
+#### Python 3.11
+```bash
+GDBM_CFLAGS="-I$(brew --prefix gdbm)/include" \
+GDBM_LIBS="-L$(brew --prefix gdbm)/lib -lgdbm" \
+./configure \
+    --prefix=/opt/python/3.11.5/ \
+    --enable-shared \
+    --enable-optimizations \
+    --with-lto \
+    --with-ensurepip=install \
+    --with-openssl="$(brew --prefix openssl@3)"
+```
+
+#### Python 3.8 through 3.10
 ```bash
 CFLAGS="-I$(brew --prefix gdbm)/include -I$(brew --prefix xz)/include" \
 LDFLAGS="-L$(brew --prefix gdbm)/lib -I$(brew --prefix xz)/lib" \
@@ -70,7 +84,23 @@ PKG_CONFIG_PATH="$(brew --prefix tcl-tk)/lib/pkgconfig" \
     --enable-shared \
     --enable-optimizations \
     --with-ensurepip=install \
-    --with-openssl="$(brew --prefix openssl@1.1)"
+    --with-openssl="$(brew --prefix openssl@1.1)" \
+    --with-tcltk-libs="$(pkg-config --libs tcl tk)" \
+    --with-tcltk-includes="$(pkg-config --cflags tcl tk)"
+```
+
+#### Old
+```bash
+CFLAGS="-I$(brew --prefix gdbm)/include -I$(brew --prefix xz)/include" \
+LDFLAGS="-L$(brew --prefix gdbm)/lib -I$(brew --prefix xz)/lib" \
+PKG_CONFIG_PATH="$(brew --prefix tcl-tk)/lib/pkgconfig" \
+./configure \
+    --prefix=/opt/python/3.11.3/ \
+    --enable-shared \
+    --enable-optimizations \
+    --with-ensurepip=install \
+    --with-openssl="$(brew --prefix openssl@1.1)" \
+    --with-pydebug # Optional
 
 # Universal (Work in Progress)
 # CFLAGS="-I$(brew --prefix gdbm)/include -I$(brew --prefix xz)/include" \
@@ -98,16 +128,22 @@ make -j "$(nproc)"
 
 ```bash
 #
-sudo make install
-
-#
 sudo make altinstall
+```
+
+```bash
+#
+sudo make install
 ```
 
 ### macOS ARM64
 
 ```bash
 arch -arm64 make -j"$(sysctl -n hw.logicalcpu)"
+```
+
+```bash
+arch -arm64 make altinstall
 ```
 
 ```bash
