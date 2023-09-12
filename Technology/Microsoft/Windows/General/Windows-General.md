@@ -3,6 +3,7 @@
 ### General
 * [cmd Documentation](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/cmd)
 * [Image File Execution Options Documentation](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/xperf/image-file-execution-options)
+* [How to Bypass Internet Connection to Install Windows 11](https://pureinfotech.com/bypass-internet-connection-install-windows-11/)
 
 ### Performance
 * [How to Permanently Set Priority Processes Using Registry Editor](https://answers.microsoft.com/en-us/windows/forum/all/how-to-permanently-set-priority-processes-using/2f9ec439-5333-4625-9577-69d322cfbc5e)
