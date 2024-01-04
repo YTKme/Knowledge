@@ -1,5 +1,18 @@
 # Python
 
+## Table of Content
+
+* [Useful Library](#useful-library)
+* [Reference](#reference)
+    * [General](#general)
+    * [stackoverflow](#stackoverflow)
+    * [Time and Space Complexity](#time-and-space-complexity)
+
+## Useful Library
+
+* `requests`: [Link](https://requests.readthedocs.io/en/latest/) | [GitHub](https://github.com/psf/requests)
+* `rich`: [Link](https://rich.readthedocs.io/en/latest/) | [GitHub](https://github.com/Textualize/rich)
+
 ## Reference
 
 ### General
@@ -17,7 +30,7 @@
 * [When to use os.name, sys.platform, or platform.system?](https://stackoverflow.com/questions/4553129/when-to-use-os-name-sys-platform-or-platform-system)
 * [Python glob multiple filetypes](https://stackoverflow.com/a/36166943/16912844)
 
-### Time and Space
+### Time and Space Complexity
 
 * [Why is [] faster than list()?](https://stackoverflow.com/questions/30216000/why-is-faster-than-list)
 * [[] and {} vs list() and dict(), which is better? [closed]](https://stackoverflow.com/questions/5790860/and-vs-list-and-dict-which-is-better)
