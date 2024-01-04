@@ -1,5 +1,11 @@
 # ZFS
 
+## Table of Content
+* [Overview](#overview)
+* [General Command](#general-command)
+    * [zpool status](#zpool-status)
+    * [zpool scrub](#zpool-scrub)
+
 ## Overview
 
 ZFS (previously Zettabyte File System) combines a file system with a volume manager.
@@ -7,6 +13,7 @@ ZFS (previously Zettabyte File System) combines a file system with a volume mana
 ## General Command
 
 ### zpool status
+
 * [Oracle Solaris ZFS Administration Guide Documentation](https://docs.oracle.com/cd/E19253-01/819-5461/gbbxi/index.html)
 * [OpenZFS Documentation](https://openzfs.github.io/openzfs-docs/man/8/zpool-scrub.8.html)
 
@@ -16,6 +23,7 @@ zpool status -v <pool>
 ```
 
 ### zpool scrub
+
 * [Oracle Solaris ZFS Administration Guide Documentation](https://docs.oracle.com/cd/E19253-01/819-5461/gbbxi/index.html)
 
 ```bash
