@@ -1,12 +1,20 @@
 # YouTube-DL
 
+## Table of Content
+* [Overview](#overview)
+* [Configuration](#configuration)
+* [Reference](#reference)
+    * [General](#general)
+
 ## Overview
+
 Download videos from [YouTube](https://www.youtube.com/) or other video
 platforms.
 
 ## Configuration
 
 Configuration: `youtube-dl.conf`
+
 Location:
 
 ```plaintext
@@ -30,5 +38,5 @@ Location:
 ## Reference
 
 ### General
-* [youtube-dl](https://youtube-dl.org/){:target="_blank"}
-* [youtube-dl (GitHub)](https://github.com/ytdl-org/youtube-dl/){:target="_blank"}
+* [youtube-dl](https://youtube-dl.org/)
+* [youtube-dl (GitHub)](https://github.com/ytdl-org/youtube-dl/)
