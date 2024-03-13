@@ -20,6 +20,7 @@
 
 * [Documentation](https://docs.python.org/)
 * [Keyword](https://docs.python.org/3/reference/lexical_analysis.html#keywords)
+* [Data Model](https://docs.python.org/3/reference/datamodel.html)
 
 ### stackoverflow
 
