@@ -1,4 +1,4 @@
-# Git Merge
+# Git Integration
 
 ## Table of Content
 * [Overview](#overview)
@@ -29,13 +29,19 @@ tools include merge capabilities.
 
 ### Fast-Forward Merge
 
-<img alt="Git Merge Fast-Forward" title="Git Merge Fast-Forward" src="res/img/git-merge-ff.svg">
+<img alt="Git Merge Fast-Forward" title="Git Merge Fast-Forward" width="512px" src="res/img/git-merge-fast-forward.svg">
 
 ### True Merge
 
+<img alt="Git Merge True" title="Git Merge True" width="512px" src="res/img/git-merge-true.svg">
+
 ### Rebase
 
+<img alt="Git Rebase" title="Git Rebase" width="512px" src="res/img/git-rebase.svg">
+
 ### Squash
+
+<img alt="Git Squash" title="Git Squash" width="512px" src="res/img/git-squash.svg">
 
 ## Reference
 
