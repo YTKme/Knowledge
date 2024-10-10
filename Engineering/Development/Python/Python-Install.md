@@ -47,7 +47,7 @@ PYTHON_CONFIGURE_OPTION=(
     # C Compiler Option
     # CFLAGS=-"-std=c++11"
     # Linker Option
-    # LDFLAGS=-"-Wl,-rpath=/opt/python/${PYTHON_VERSION}/lib/"
+    LDFLAGS="-Wl,-rpath=/opt/python/${PYTHON_VERSION}/lib/"
     # Install Option
     --prefix="/opt/python/${PYTHON_VERSION}/"
     --with-ensurepip=install
