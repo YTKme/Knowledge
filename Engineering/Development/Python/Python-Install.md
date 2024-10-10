@@ -40,41 +40,57 @@ sudo apt-get install build-essential gdb lcov pkg-config \
 ### Linux
 
 ```bash
-./configure \
-    --prefix=/opt/python/3.11/ \
-    --enable-shared \
-    --enable-optimizations \
-    --with-lto=full \
-    --with-ensurepip=install \
-    LDFLAGS=-Wl,-rpath=/opt/python/3.11/lib/
-
-# ./configure \
-#     --prefix=/opt/python/3.11/ \
-#     --enable-shared \
-#     --enable-optimizations \
-#     --with-lto=full \
-#     --enable-pystats \
-#     --enable-profiling \
-#     --with-ensurepip=install \
-#     LDFLAGS=-Wl,-rpath=/opt/python/3.11/lib/
+PYTHON_VERSION=3.13.0
+PYTHON_CONFIGURE_OPTION=(
+    # General Option
+    --disable-gil
+    # C Compiler Option
+    # CFLAGS=-"-std=c++11"
+    # Linker Option
+    # LDFLAGS=-"-Wl,-rpath=/opt/python/${PYTHON_VERSION}/lib/"
+    # Install Option
+    --prefix="/opt/python/${PYTHON_VERSION}/"
+    --with-ensurepip=install
+    # Performance Option
+    --enable-optimizations
+    --with-lto=full
+    # Linker Option
+    --enable-shared
+)
 ```
 
 ### macOS ARM64
 
-#### Python 3.11
+#### Python 3.13
+
 ```bash
+PYTHON_VERSION=3.13.0
+PYTHON_CONFIGURE_OPTION=(
+    # General Option
+    # --disable-gil
+    # C Compiler Option
+    # CFLAGS=-"I`brew --prefix`/include/OpenEXR/ -I`brew --prefix`/include/Imath/ -std=c++11"
+    # Linker Option
+    # LDFLAGS=-"L`brew --prefix`/lib/"
+    # Install Option
+    --prefix="/opt/python/${PYTHON_VERSION}/"
+    --with-ensurepip=install
+    # Performance Option
+    --enable-optimizations
+    --with-lto
+    # Linker Option
+    --enable-shared
+    # Library Option
+    --with-openssl="$(brew --prefix openssl@3)"
+    --with-openssl-rpath=auto
+)
 GDBM_CFLAGS="-I$(brew --prefix gdbm)/include" \
 GDBM_LIBS="-L$(brew --prefix gdbm)/lib -lgdbm" \
-./configure \
-    --prefix=/opt/python/3.11.5/ \
-    --enable-shared \
-    --enable-optimizations \
-    --with-lto \
-    --with-ensurepip=install \
-    --with-openssl="$(brew --prefix openssl@3)"
+./configure "${PYTHON_CONFIGURE_OPTION[@]}"
 ```
 
 #### Python 3.8 through 3.10
+
 ```bash
 CFLAGS="-I$(brew --prefix gdbm)/include -I$(brew --prefix xz)/include" \
 LDFLAGS="-L$(brew --prefix gdbm)/lib -I$(brew --prefix xz)/lib" \
@@ -90,6 +106,7 @@ PKG_CONFIG_PATH="$(brew --prefix tcl-tk)/lib/pkgconfig" \
 ```
 
 #### Old
+
 ```bash
 CFLAGS="-I$(brew --prefix gdbm)/include -I$(brew --prefix xz)/include" \
 LDFLAGS="-L$(brew --prefix gdbm)/lib -I$(brew --prefix xz)/lib" \
