@@ -30,5 +30,5 @@ Location:
 ## Reference
 
 ### General
-* [youtube-dl](https://youtube-dl.org/){:target="_blank"}
-* [youtube-dl (GitHub)](https://github.com/ytdl-org/youtube-dl/){:target="_blank"}
+* [youtube-dl](https://youtube-dl.org/)
+* [youtube-dl (GitHub)](https://github.com/ytdl-org/youtube-dl/)
