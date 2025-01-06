@@ -57,6 +57,7 @@ PYTHON_CONFIGURE_OPTION=(
     # Linker Option
     --enable-shared
 )
+./configure "${PYTHON_CONFIGURE_OPTION[@]}"
 ```
 
 ### macOS ARM64
