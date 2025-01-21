@@ -83,7 +83,7 @@ PYTHON_CONFIGURE_OPTION=(
     --enable-shared
     # Library Option
     --with-openssl="$(brew --prefix openssl@3)"
-    --with-openssl-rpath=auto
+    --with-openssl-rpath=auto # Potential SSL Module Error
 )
 GDBM_CFLAGS="-I$(brew --prefix gdbm)/include" \
 GDBM_LIBS="-L$(brew --prefix gdbm)/lib -lgdbm" \
