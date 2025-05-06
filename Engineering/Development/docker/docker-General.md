@@ -18,3 +18,9 @@ docker build . [-t <name>/<tag>] [-f <directory>/Dockerfile]
 # Run a command in a new container
 docker run -p <host-port>:<container-port> -d <name>/<tag>
 ```
+
+### docker system
+
+```bash
+docker system df
+```
