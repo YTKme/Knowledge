@@ -13,6 +13,8 @@
 
 * `requests`: [Link](https://requests.readthedocs.io/en/latest/) | [GitHub](https://github.com/psf/requests)
 * `rich`: [Link](https://rich.readthedocs.io/en/latest/) | [GitHub](https://github.com/Textualize/rich)
+* `ruff`: [Link](https://docs.astral.sh/ruff/) | [GitHub](https://github.com/astral-sh/ruff)
+    * [Ruff Rules](https://docs.astral.sh/ruff/rules/)
 
 ## Reference
 
