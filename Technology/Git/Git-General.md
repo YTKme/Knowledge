@@ -199,6 +199,7 @@ Discards all history and changes back to the specified commit.
 * [Git (Wikipedia)](https://en.wikipedia.org/wiki/Git)
 * [git (Software)](https://git-scm.com/)
 * [Getting Git Right](https://www.atlassian.com/git)
+* [Git Tagg](https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-tag)
 * [GitHub Cheatsheet](https://github.github.com/training-kit/)
 * [Visual Git Cheatsheet](https://ndpsoftware.com/git-cheatsheet.html)
 * [Difference between "git add -A" and "git add ."](https://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add)
