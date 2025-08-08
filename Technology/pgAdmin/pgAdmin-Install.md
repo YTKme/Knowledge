@@ -2,9 +2,14 @@
 
 ## Table of Content
 
+* [Python](#python)
+  * [Install](#install)
+  * [Launch](#launch)
+* [Reference](#reference)
+
 ## Python
 
-### Install
+### Install (PyPI)
 
 A Python package is available for those wishing to run pgAdmin as a web
 application in a Python environment. Note that the packages do not
@@ -51,6 +56,33 @@ mkdir --parents /path/to/pgadmin/var/log
 ```shell
 sed -i '' 's|DATA_DIR = os\.path\.join('\''/var/lib/'\'', APP_PATH)|DATA_DIR = os\.path\.join('\''/path/to/pgadmin/var/lib'\'', APP_PATH)|' /path/to/python/lib/python/site-packages/pgadmin4/config.py
 sed -i '' 's|LOG_FILE = os\.path\.join('\''/var/log'\'', APP_PATH, APP_SHORT_NAME + '\''\.log'\'')|LOG_FILE = os\.path\.join('\''/path/to/pgadmin/var/log'\'', APP_PATH, APP_SHORT_NAME + '\''\.log'\'')|' /path/to/python/lib/python/site-packages/pgadmin4/config.py
+```
+
+### Install (Manual)
+
+
+
+### Launch
+
+```shell
+pgadmin4
+```
+
+```shell
+(pgadmin4) $ pgadmin4
+NOTE: Configuring authentication for SERVER mode.
+
+Enter the email address and password to use for the initial pgAdmin user account:
+
+Email address: user@domain.com
+Password:
+Retype password:
+Starting pgAdmin 4. Please navigate to http://127.0.0.1:5050 in your browser.
+ * Serving Flask app "pgadmin" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: off
 ```
 
 ## Reference
